@@ -1,0 +1,329 @@
+/* ============================================================
+   RESPONSIVO — Portfolio Raphael
+   Nenhuma regra aqui afeta o desktop (> 1024px).
+   Todas as alterações de layout ficam dentro de @media.
+   ============================================================ */
+
+/* ── Hamburguer: sempre escondido fora do mobile ── */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    z-index: 1100;
+    flex-shrink: 0;
+}
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #00CED1;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* ============================================================
+   TELAS INTERMEDIÁRIAS (1025px – 1280px)
+   Só ajustes leves de espaçamento — sem mudar layout
+   ============================================================ */
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .cabecalho { padding: 2% 6%; gap: 10%; }
+    .principal__conteudo { gap: 10%; }
+    .principal__sobre__dados { margin-left: 6%; }
+    .principal__educacao__titulo { margin-left: 20%; }
+    .principal__skills__titulo { margin-left: 20%; }
+    .principal__projects__titulo { margin-left: 20%; }
+    .contato__titulo { margin-left: 80px; }
+    .contato__form { margin-left: 60px; }
+    .contact-footer { margin-left: 200px; }
+    .social-icons-footer { margin-left: 60px; }
+    .credits-footer { margin-left: 25%; }
+}
+
+/* ============================================================
+   TABLET (768px – 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .cabecalho { padding: 2% 4%; gap: 5%; }
+    .cabecalho__menu { gap: 30px; }
+    .cabecalho__menu__link { font-size: 15px; }
+
+    /* Hero */
+    .principal__conteudo { gap: 6%; }
+    .principal__conteudo__imagem { width: 28%; }
+    .principal__conteudo__inf { width: 50%; }
+    .principal__conteudo__titulo { font-size: 2.2em; }
+    .principal__conteudo__subtitulo { font-size: 1.4em; }
+
+    /* Sobre */
+    .principal__sobre__dados { width: 22%; margin-left: 4%; }
+    .principal__sobre__text { width: 52%; }
+
+    /* Educação — no tablet ainda usa o layout original com linha central,
+       só reduzimos as margens fixas de pixel */
+    .principal__educacao__titulo { margin-left: 15%; }
+    .principal__educacao__cont { position: relative; }
+    .principal__educacao__cont__card {
+        width: 28%;
+        height: 450px;
+    }
+    /* card1: empurra para esquerda com margem menor */
+    .principal__educacao__cont__card:first-child { margin-right: 0; }
+    /* card2: posiciona à direita mantendo o efeito de linha */
+    #card2 { margin-left: 0; margin-top: -20px; }
+    .linha5 { margin-right: 80px; }
+
+    /* Skills */
+    .principal__skills__titulo { margin-left: 15%; }
+
+    /* Projetos */
+    .principal__projects__titulo { margin-left: 15%; }
+    .principal__projects__cont__card { margin-left: 60px; }
+
+    /* Contato */
+    .contato__titulo { margin-left: 60px; }
+    .contato__form { margin-left: 40px; }
+
+    /* Footer */
+    .contact-footer { margin-left: 120px; }
+    .social-icons-footer { margin-left: 40px; }
+    .credits-footer { margin-left: 20%; }
+}
+
+/* ============================================================
+   MOBILE (≤ 768px) — hamburguer entra aqui
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* ── Header ── */
+    .cabecalho {
+        padding: 12px 5%;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #000 !important;
+        height: auto;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+        padding: 10px;
+        min-width: 44px;
+        min-height: 44px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecalho__menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background: #0a0a0a;
+        padding: 8px 0 16px;
+        border-top: 1px solid #1a1a1a;
+    }
+    .cabecalho__menu.aberto { display: flex; }
+    .cabecalho__menu__link {
+        font-size: 17px;
+        padding: 13px 5%;
+        border-bottom: 1px solid #1a1a1a;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ── Hero ── */
+    .principal { padding: 5%; box-sizing: border-box; }
+    .principal__conteudo {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .principal__conteudo__imagem {
+        width: 50%;
+        height: auto;
+        margin-top: 80px;
+    }
+    .principal__conteudo__inf {
+        width: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+    .principal__conteudo__titulo { font-size: 2em; }
+    .principal__conteudo__subtitulo { font-size: 1.2em; }
+    .botton__cont { width: auto; padding: 14px 28px; }
+
+    /* ── Sobre ── */
+    .principal__sobre {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        gap: 20px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .principal__sobre__dados {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    .principal__sobre__text {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    /* os mini-cards dentro de "sobre" */
+    .now__cards {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .now__conteudo {
+        height: auto;
+        margin-top: 10px;
+    }
+    .now__conteudo i { margin-top: 10px; }
+    .now__cards2 { height: auto; flex-wrap: wrap; }
+
+    /* ── Educação ── */
+    .principal__educacao { margin-top: 80px; }
+    .principal__educacao__titulo { margin-left: 5%; }
+    .linha3 { width: 70%; }
+    /* muda para coluna: esconde linha e ponto central */
+    .principal__educacao__cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5%;
+        box-sizing: border-box;
+        gap: 24px;
+    }
+    .principal__educacao__cont__card {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #card2 { margin-left: 0; margin-top: 0; }
+    .linha5 { display: none; }
+    .timeline-item { display: none; }
+    .cont__card__princ { flex-wrap: wrap; gap: 8px; }
+    .cont__card__titulo { width: 100%; padding: 0; }
+    .cont__card__date { width: 100%; padding: 0; }
+    .cont__card__text { width: 100%; padding-left: 0; }
+
+    /* ── Skills ── */
+    .principal__skills { margin-top: 80px; }
+    .principal__skills__titulo { margin-left: 5%; }
+    .linha6 { width: 75%; }
+    .principal__skills__cont {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .principal__skills__cont__cardP { width: 100%; }
+
+    /* ── Projetos ── */
+    .principal__projects { margin-top: 80px; }
+    .principal__projects__titulo { margin-left: 5%; }
+    .linha7 { width: 75%; }
+    .principal__projects__cont__card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 380px;
+        display: block;
+    }
+    /* como não há container flex/grid nos projetos, empilhamos via display block */
+    .principal__projects__cont__card + .principal__projects__cont__card {
+        margin-top: 24px;
+    }
+
+    /* ── Contato ── */
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 80px;
+        padding: 40px 5%;
+        box-sizing: border-box;
+        gap: 24px;
+    }
+    .contato__titulo { margin-left: 0; text-align: center; }
+    .contato__titulo h1 { font-size: 28px; }
+    .contato__form { margin-left: 0; width: 100%; max-width: 420px; box-sizing: border-box; }
+
+    /* ── Footer ── */
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 5%;
+        gap: 24px;
+        box-sizing: border-box;
+    }
+    .contact-footer { margin-left: 0; margin-top: 0; align-items: center; }
+    .contact__footer__item { justify-content: center; }
+    .social-icons-footer { margin-left: 0; margin-top: 0; width: auto; text-align: center; }
+    .social-icons-itens { justify-content: center; }
+    .second-footer { justify-content: center; }
+    .credits-footer { margin-left: 0; width: auto; flex-wrap: wrap; justify-content: center; }
+
+    /* ── projeto1.html ── */
+    .conteudo__titulo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 80px;
+    }
+    .areadoConteudo {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 24px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .conteudo__imgT { margin-left: 0; width: 100%; }
+    .slider { max-width: 100%; }
+    .slides img { height: auto; max-height: 300px; }
+    .conteudo__card {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .card__btn2 { width: 100%; box-sizing: border-box; display: block; }
+    .conteudo__descricao {
+        margin-top: 40px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .descricao, .functions, .objetivo, .equipe {
+        width: 100%;
+        margin-left: 0;
+    }
+    .linha9 { margin-left: 0; }
+}
+
+/* ============================================================
+   MOBILE PEQUENO (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+    .principal__conteudo__imagem { width: 65%; }
+    .principal__conteudo__titulo { font-size: 1.7em; }
+    .principal__conteudo__subtitulo { font-size: 1em; }
+    .contato__titulo h1 { font-size: 22px; }
+    .now__cards { grid-template-columns: 1fr; }
+    .principal__skills__cont { grid-template-columns: repeat(2, 1fr); }
+}
