@@ -194,7 +194,7 @@
         height: auto;
         margin-top: 10px;
     }
-    .now__conteudo i { margin-top: 10px; }
+    .now__conteudo i { margin-top: 20%; }
     .now__cards2 { height: auto; flex-wrap: wrap; }
 
     /* ── Educação ── */
