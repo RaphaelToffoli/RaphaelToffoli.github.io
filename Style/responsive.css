@@ -280,7 +280,7 @@
     .social-icons-footer { margin-left: 0; margin-top: 0; width: auto; text-align: center; }
     .social-icons-itens { justify-content: center; }
     .second-footer { justify-content: center; }
-    .credits-footer { margin-left: 0; width: auto; flex-wrap: wrap; justify-content: center; }
+    .credits-footer { margin-left: 0; padding-top:10px; width: auto; flex-wrap: wrap; justify-content: center; }
 
     /* ── projeto1.html ── */
     .conteudo__titulo {
