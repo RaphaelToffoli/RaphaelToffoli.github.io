@@ -51,41 +51,75 @@
 @media (max-width: 1024px) {
 
     /* Header */
-    .cabecalho { padding: 2% 4%; gap: 5%; }
+    .cabecalho { padding: 2% 4%;}
     .cabecalho__menu { gap: 30px; }
-    .cabecalho__menu__link { font-size: 15px; }
+    .cabecalho__menu__link { 
+        font-size: 20px; 
+        font-family: var(--fonte-link-menu);
+        }
 
     /* Hero */
-    .principal__conteudo { gap: 6%; }
+    .principal__conteudo { gap: 20%; }
     .principal__conteudo__imagem { width: 28%; }
     .principal__conteudo__inf { width: 50%; }
     .principal__conteudo__titulo { font-size: 2.2em; }
     .principal__conteudo__subtitulo { font-size: 1.4em; }
 
     /* Sobre */
-    .principal__sobre__dados { width: 22%; margin-left: 4%; }
-    .principal__sobre__text { width: 52%; }
+    .principal__sobre {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        gap: 20px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .principal__sobre__dados {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    .now__cards {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .now__conteudo {
+        margin-top: 10px;
+        height: 120px;
+    }
+    .now__conteudo i { margin-top: 10%; }
+    .now__cards2 { height: auto; flex-wrap: wrap; }
+
+    .principal__sobre__text {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        box-sizing: border-box;
+    }
 
     /* Educação — no tablet ainda usa o layout original com linha central,
        só reduzimos as margens fixas de pixel */
     .principal__educacao__titulo { margin-left: 15%; }
     .principal__educacao__cont { position: relative; }
     .principal__educacao__cont__card {
-        width: 28%;
+        width: 50%;
         height: 450px;
     }
     /* card1: empurra para esquerda com margem menor */
     .principal__educacao__cont__card:first-child { margin-right: 0; }
     /* card2: posiciona à direita mantendo o efeito de linha */
-    #card2 { margin-left: 0; margin-top: -20px; }
+    #card2 { margin-left: 300px; margin-top: -20px; }
     .linha5 { margin-right: 80px; }
+    .timeline-item::before{ margin-left:75px;}
 
     /* Skills */
     .principal__skills__titulo { margin-left: 15%; }
 
     /* Projetos */
     .principal__projects__titulo { margin-left: 15%; }
-    .principal__projects__cont__card { margin-left: 60px; }
+    .principal__projects__cont__card { margin-left: 60px; margin-top: 20px; }
 
     /* Contato */
     .contato__titulo { margin-left: 60px; }
@@ -96,7 +130,45 @@
     .social-icons-footer { margin-left: 40px; }
     .credits-footer { margin-left: 20%; }
 }
-
+@media (max-width: 900px) {
+    .cabecalho {
+        padding: 12px 5%;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #000 !important;
+        height: auto;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+        padding: 10px;
+        min-width: 44px;
+        min-height: 44px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecalho__menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background: #0a0a0a;
+        padding: 8px 0 16px;
+        border-top: 1px solid #1a1a1a;
+    }
+    .cabecalho__menu.aberto { display: flex; }
+    .cabecalho__menu__link {
+        font-size: 17px;
+        padding: 13px 5%;
+        border-bottom: 1px solid #1a1a1a;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
 /* ============================================================
    MOBILE (≤ 768px) — hamburguer entra aqui
    ============================================================ */
