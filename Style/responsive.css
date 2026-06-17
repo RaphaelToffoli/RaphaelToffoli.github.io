@@ -40,6 +40,12 @@
         height: 560px;
     }
 }
+@media (max-width: 1661px){
+    /* Project 1 */
+    .areadoConteudo{
+     margin-right: 40px;
+    }
+}
 @media (max-width: 1385px) {
     /* Header */ 
     .cabecalho { padding: 2% 7%;}
