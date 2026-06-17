@@ -129,6 +129,40 @@
     .contact-footer { margin-left: 120px; }
     .social-icons-footer { margin-left: 40px; }
     .credits-footer { margin-left: 20%; }
+       /* ── projeto1.html ── */
+   .conteudo__titulo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 80px;
+    }
+    .areadoConteudo {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 24px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .conteudo__imgT { margin-left: 0; width: 100%; }
+    .slider { max-width: 100%; }
+    .slides img { height: auto; max-height: 300px; }
+    .conteudo__card {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .card__btn2 { width: 100%; box-sizing: border-box; display: block; }
+    .conteudo__descricao {
+        margin-top: 40px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .descricao, .functions, .objetivo, .equipe {
+        width: 100%;
+        margin-left: 0;
+    }
+    .linha9 { margin-left: 0; }
 }
 @media (max-width: 900px) {
     .cabecalho {
