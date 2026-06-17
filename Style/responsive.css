@@ -26,6 +26,20 @@
     border-radius: 3px;
     transition: 0.3s;
 }
+/* Telas Mais ou menos grandes (1668px)
+    Ajustes de tamanho de cards
+ */
+@media (max-width: 1669px){
+    /* Sobre */
+    .principal__sobre__text{
+        height: 770px;
+    }
+    /* Educação */
+    .principal__educacao__cont__card{
+        width: 25%;
+        height: 560px;
+    }
+}
 
 /* ============================================================
    TELAS INTERMEDIÁRIAS (1025px – 1280px)
