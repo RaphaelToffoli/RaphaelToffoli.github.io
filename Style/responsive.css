@@ -82,7 +82,9 @@
     .social-icons-footer { margin-left: 60px; }
     .credits-footer { margin-left: 25%; }
 }
-
+@media (max-width: 1194px){
+    .cabecalho { padding: 2% 9%; gap: 20%; }
+}
 /* ============================================================
    TABLET (768px – 1024px)
    ============================================================ */
