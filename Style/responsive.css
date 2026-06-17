@@ -40,6 +40,24 @@
         height: 560px;
     }
 }
+@media (max-width: 1385px) {
+    /* Header */ 
+    .cabecalho { padding: 2% 7%;}
+    .cabecalho__menu { gap: 30px; }
+    .cabecalho__menu__link { 
+        font-size: 20px; 
+        font-family: var(--fonte-link-menu);
+        }
+    /* Sobre */
+    .principal__sobre{
+        gap:30px;
+    }
+    .principal__sobre__dados{
+        width: 20%;
+    }
+    /* Projets */
+    .principal__projects__cont__card {margin-top: 20px; }
+}
 
 /* ============================================================
    TELAS INTERMEDIÁRIAS (1025px – 1280px)
