@@ -1,0 +1,10 @@
+.slides2{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slides2 img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
