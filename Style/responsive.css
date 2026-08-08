@@ -62,7 +62,8 @@
         width: 20%;
     }
     /* Projets */
-    .principal__projects__cont__card {margin-top: 20px; }
+    .principal__projects__cont{display: flex; flex-direction: column;}
+    .principal__projects__cont__card {margin-top: 20px; margin-left: 140px; }
 }
 
 /* ============================================================
