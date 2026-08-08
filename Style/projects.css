@@ -34,11 +34,17 @@
     background: var(--cor-destaque);
     margin-top: 5px;
 }
+.principal__projects__cont{
+    display: flex;
+    width: 700px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-self: center;
+}
 .principal__projects__cont__card{
     width: 300px;
     border-radius: 12px;
     overflow: hidden;
-    margin-left:140px;
 
     background: #1a1a1a;
     border: 1px solid #333;
