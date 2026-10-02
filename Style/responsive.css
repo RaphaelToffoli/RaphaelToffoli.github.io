@@ -252,6 +252,7 @@
     /* ── Header ── */
     .cabecalho {
         padding: 12px 5%;
+         widht:100%;
         gap: 0;
         justify-content: space-between;
         align-items: center;
