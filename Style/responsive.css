@@ -62,7 +62,7 @@
         width: 20%;
     }
     /* Projets */
-    .principal__projects__cont{display: flex; flex-direction: column; width:100%;}
+    .principal__projects__cont{display: flex; flex-direction: column; width:100%; height:auto;}
     .principal__projects__cont__card {margin-top: 20px; margin-left: 140px; }
 }
 
