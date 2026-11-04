@@ -36,9 +36,13 @@
 }
 .principal__projects__cont{
     display: flex;
-    width: 700px;
+    flex-wrap: wrap;
+    width: 1000px;
+    height:800px;
     margin-top: 20px;
+    flex-direction: row;
     justify-content: space-between;
+    row-gap: 5%;
     align-self: center;
 }
 .principal__projects__cont__card{
@@ -125,4 +129,9 @@
 .github-btn:hover{
     background: var(--cor-destaque);
     color: black;
+}
+.espaco{
+    display: flex;
+    gap: 5%;
+    width: 30%;
 }
