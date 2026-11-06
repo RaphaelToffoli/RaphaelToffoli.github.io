@@ -56,6 +56,9 @@
 
     transition: 0.3s;
 }
+.project4{
+    height:30%;
+}
 .principal__projects__cont__card:hover{
     transform: translateY(-5px);
     box-shadow: 0 0 15px var(--cor-destaque);
